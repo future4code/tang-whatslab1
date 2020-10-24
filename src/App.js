@@ -12,7 +12,6 @@ export default class App extends React.Component {
   digitaNome = (event) => {
     this.setState({
       nome: event.target.value
-
     })
   }
 
@@ -30,7 +29,6 @@ export default class App extends React.Component {
     this.setState({
       historico: [...this.state.historico, novaMsg]
     })
-
     this.state.msg = ""
   }
 
@@ -45,12 +43,12 @@ export default class App extends React.Component {
 
     return (
       <div className="App">
+
         {historico}
         <div className="Entrada">
           <input className="nome" value={this.state.nome} onChange={this.digitaNome} placeholder={"Nome"}></input>
-          <input className="mensagem" value={this.state.msg} onChange={this.digitaMensagem} placeholder={"Digite a mensagem"}></input>
+          <input className="msg" value={this.state.msg} onChange={this.digitaMensagem} placeholder={"Digite a mensagem"}></input>
           <button onClick={this.Enviar}>Enviar</button>
-      
         </div>
       </div>
     );
