@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react'
+import Mensagem from './components/Mensagem'
 
 export default class App extends React.Component {
   state = {
