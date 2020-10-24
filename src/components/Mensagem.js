@@ -1,5 +1,4 @@
 import React from 'react'
-import './Mensagem.css'
 
 export default class Mensagem extends React.Component {
     render () {
